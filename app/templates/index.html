@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+	<title>Play Data Science</title>
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/styles.css" media="screen">
+  
+</head>
+<body>
+
+
+
+<div id="start" class="section">
+	<h1>Let's Play Data Science</h1>
+  <p>Having fun with short text sentiment</p>
+  	<div class="btn next">
+  		start
+  	</div>
+</div>
+
+<div id="query" class="section">
+	<h1>Play Get Data</h1>
+	<p>Let's ask Twitter for some data</p>
+	<input id="keywords" name="query" type="text" placeholder="enter keywords" />
+	<div id="btnQuery" class="btn action">
+  		get
+  	</div>
+  	<div id="dataQuery" class="data"></div>
+  	<div class="btn next">
+  		play more
+  	</div>
+</div>
+
+<div id="process" class="section">
+  	<h1>Play Process Data</h1>
+  	<p>Choose methods for pre-processing data</p>
+  	<ul>
+  		<li>
+  			<label>
+  				<input name="processOpt" type="checkbox" value="urls" />
+  				Replace URLs
+  			</label>
+  		</li>
+  		<li>
+  			<label>
+  				<input name="processOpt" type="checkbox" value="hashtags" />
+  				Replace #hashtags
+  			</label>
+  		</li>
+  		<li>
+  			<label>
+  				<input name="processOpt" type="checkbox" value="unames" />
+  				Replace @usernames
+  			</label>
+  		</li>
+  	</ul>
+  	<div id="btnProcess" class="btn action">
+  		process
+ 	</div>
+  	<div id="dataProcess" class="data"></div>
+  	<div class="btn next">
+  		play more
+  	</div>
+</div>
+
+<div id="features" class="section">
+  	<h1>Play Features</h1>
+  	<p>Choose methods for feature extraction</p>
+  	<ul>
+  		<li>
+  			<label>
+  				<input name="featureOpt" type="radio" value="unigrams" checked="checked" />
+  				Unigrams
+  			</label>
+  		</li>
+  		<li>
+  			<label>
+  				<input name="featureOpt" type="radio" value="bigrams" />
+  				Bigrams
+  			</label>
+  		</li>
+  	</ul>
+  	<div id="btnFeatures" class="btn action">
+  		features
+ 	</div>
+  	<div id="dataFeatures" class="data"></div>
+  	<div class="btn next">
+  		play more
+  	</div>
+</div>
+
+<div id="learn" class="section">
+  	<h1>Play Machine Learning</h1>
+  	<p>Choose classifier for learning</p>
+  	<ul>
+  		<li>
+  			<label>
+  				<input name="learnOpt" type="radio" value="lr" checked="checked" />
+  				Logistical Regression
+  			</label>
+  		</li>
+  		<li>
+  			<label>
+  				<input name="learnOpt" type="radio" value="nb" />
+  				Naive Bayes
+  			</label>
+  		</li>
+  		<li>
+  			<label>
+  				<input name="learnOpt" type="radio" value="svm" />
+  				Support Vector Machine
+  			</label>
+  		</li>
+      <li>
+        <label>
+          <input name="learnOpt" type="radio" value="nn" />
+          Neural Network
+        </label>
+      </li>
+  	</ul>
+  	<div id="btnLearn" class="btn action">
+  		learn
+ 	</div>
+  	<div id="dataLearn" class="data"></div>
+  	<div class="btn next">
+  		play more
+  	</div>
+</div>
+
+<div id="test" class="section">
+  	<h1>Play Test Data</h1>
+  	<p>Run it</p>
+  	<div id="btnTest" class="btn action">
+  		test
+ 	</div>
+  	<div id="dataTest" class="data"></div>
+  	<div class="btn next">
+  		play more
+  	</div>
+</div>
+
+<div id="report" class="section">
+  	<h1>Learnings</h1>
+  	<p>How does accuracy compare?</p>
+  	<div id="btnReport" class="btn action">
+  		report
+ 	  </div>
+  	<div id="dataReport">
+      <div id="barChart" class="barChart"></div>
+    </div>
+  	<div class="btn next">
+  		play more
+  	</div>
+</div>
+
+<div id="again" class="section">
+    <h1>Play Again?</h1>
+    <p>Results are saved for comparison, unless you don't want to play anymore</p>
+    <div id="btnClear" class="btn action">
+      clear saved
+    </div>
+    <div class="btn next">
+      play more
+    </div>
+</div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="http://mbostock.github.com/d3/d3.v2.js"></script>
+<script src="static/bar.js"></script>
+<script src="static/app.js"></script>
+
+</body>
+</html> 
