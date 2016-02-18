@@ -1,1 +1,1 @@
-web: gunicorn play.app --log-file -
+web: gunicorn play:app --log-file -
