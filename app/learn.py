@@ -1,8 +1,8 @@
 import pickle, json
-from sklearn.externals import joblib
+# from sklearn.externals import joblib
 
 # web_classfier_file_path = 'data/classifiers/me_uni_pp_100' 
-web_classfier_file_path = '/Users/oj/Documents/git/ga_data_science/app/data/web_classifier.pkl' 
+web_classfier_file_path = '/Users/oj/Documents/git/ga_data_science/app/data/web_classifier.p' 
 
 
 def get_saved_classifier():
@@ -10,7 +10,8 @@ def get_saved_classifier():
     # data = pickle.load(f)
     # f.close()
     # return data
-    return joblib.load(web_classfier_file_path)
+    return pickle.load(open(web_classfier_file_path, 'rb'))
+    # return joblib.load(web_classfier_file_path)
 
 def get_accuracy(choices):
 
