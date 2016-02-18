@@ -30,12 +30,7 @@ def _process():
 def _features():
     processed = json.loads(request.args.get('processed'))
     options = json.loads(request.args.get('options'))
-    # features = get_features(processed, options)
     features = [list(x) for x in get_features(processed, options)]
-    # print(" ")
-    # print(features)
-    # print([list(x) for x in get_features(processed, options)])
-    # print(" ")
     return jsonify(features=list(features))
 
 @app.route('/_learn')
