@@ -16,9 +16,9 @@ def get_saved_classifier():
     os.chdir(os.path.dirname(__file__))
     print(os.getcwd())
     print("++++++++++")
-    print(os.path.isfile(web_classfier_file_path))
-    print(os.path.isfile(web_classfier_file_path2))
-    print(os.path.isfile(web_classfier_file_path3))
+    print("1" + str(os.path.isfile(web_classfier_file_path)))
+    print("2" + str(os.path.isfile(web_classfier_file_path2)))
+    print("3" + str(os.path.isfile(web_classfier_file_path3)))
     clf = pickle.load(open(web_classfier_file_path, 'rb'))
     print("----------")
     return clf
