@@ -2,7 +2,7 @@ import pickle, json, os
 # from sklearn.externals import joblib
 
 # web_classfier_file_path = 'data/classifiers/me_uni_pp_100' 
-web_classfier_file_path = 'play/data/web_classifier.p' 
+web_classfier_file_path = '/app/play/data/web_classifier.p' 
 
 
 def get_saved_classifier():
