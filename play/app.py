@@ -46,7 +46,10 @@ def _learn():
 
 @app.route('/_test')
 def _test():
-    classifications = get_classifications(json.loads(request.args.get('tweets')))
+    tweets = json.loads(request.args.get('tweets'))
+    print("tweets loaded")
+    classifications = get_classifications(tweets)
+    print("classifications loaded")
     return jsonify(classifications=classifications)
 
 @app.route('/_report')
