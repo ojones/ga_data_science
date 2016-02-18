@@ -19,6 +19,9 @@ def get_saved_classifier():
     print("1" + str(os.path.isfile(web_classfier_file_path)))
     print("2" + str(os.path.isfile(web_classfier_file_path2)))
     print("3" + str(os.path.isfile(web_classfier_file_path3)))
+    with open(web_classfier_file_path, 'rb') as f:
+    	print("this part works")
+    	print("======================")
     clf = pickle.load(open(web_classfier_file_path, 'rb'))
     print("----------")
     return clf
