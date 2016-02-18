@@ -22,7 +22,11 @@ def get_saved_classifier():
     with open(web_classfier_file_path, 'rb') as f:
     	print("this part works")
     	print("======================")
-    clf = pickle.load(open(web_classfier_file_path, 'rb'))
+    clf = None
+    try:
+    	clf = pickle.load(open(web_classfier_file_path, 'rb'))
+    except Exception as e:
+    	print(e.message)
     print("----------")
     return clf
     # return joblib.load(web_classfier_file_path)
