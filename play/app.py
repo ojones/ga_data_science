@@ -1,10 +1,22 @@
 from flask import Flask, render_template, redirect, url_for, request, session, jsonify
-from tweets import get_tweets
-from process import get_processed
-from features import get_features
-from learn import get_accuracy
-from learn import get_classifications
 import json
+import os
+is_prod = os.environ.get('IS_HEROKU', None)
+
+if is_prod:
+    from play.tweets import get_tweets
+    from play.process import get_processed
+    from play.features import get_features
+    from play.learn import get_accuracy
+    from play.learn import get_classifications
+
+else:
+    from tweets import get_tweets
+    from process import get_processed
+    from features import get_features
+    from learn import get_accuracy
+    from learn import get_classifications
+
 
 
 app = Flask(__name__)
