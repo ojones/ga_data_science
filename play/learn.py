@@ -1,8 +1,9 @@
-import pickle
-import urllib
+import pickle, json, os
+
 
 def get_saved_classifier():
     myurl = "https://s3-us-west-2.amazonaws.com/ozclassifiers/web_classifier.p"
+    import urllib
     opener = urllib.URLopener()
     myfile = opener.open(myurl)
     clf = pickle.load(myfile)
