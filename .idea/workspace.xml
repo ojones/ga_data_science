@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa3175f3-22c9-4215-8811-22590aad959d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/play/learn.py" afterPath="$PROJECT_DIR$/play/learn.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/play/static/styles.css" afterPath="$PROJECT_DIR$/play/static/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/play/templates/index.html" afterPath="$PROJECT_DIR$/play/templates/index.html" />
     </list>
     <ignored path="ga_data_science.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +37,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/play/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.117647">
-              <caret line="146" column="14" selection-start-line="146" selection-start-column="14" selection-end-line="146" selection-end-column="14" />
+            <state vertical-scroll-proportion="-8.823529">
+              <caret line="145" column="13" selection-start-line="145" selection-start-column="13" selection-end-line="145" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -47,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/play/static/styles.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -91,9 +92,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/play/data/classifier_pipline.py" />
+        <option value="$PROJECT_DIR$/play/learn.py" />
         <option value="$PROJECT_DIR$/play/static/styles.css" />
         <option value="$PROJECT_DIR$/play/templates/index.html" />
-        <option value="$PROJECT_DIR$/play/learn.py" />
       </list>
     </option>
   </component>
@@ -456,15 +457,15 @@
     <entry file="file://$PROJECT_DIR$/play/static/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/play/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.117647">
-          <caret line="146" column="14" selection-start-line="146" selection-start-column="14" selection-end-line="146" selection-end-column="14" />
+        <state vertical-scroll-proportion="-8.823529">
+          <caret line="145" column="13" selection-start-line="145" selection-start-column="13" selection-end-line="145" selection-end-column="13" />
           <folding />
         </state>
       </provider>

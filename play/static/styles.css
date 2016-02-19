@@ -14,10 +14,6 @@ li {
 	list-style: none;
 }
 
-p {
-    padding: 0 20px;
-}
-
 .section {
 	border-top: solid #000 40px; 
 	border-bottom: solid #000 40px; 
