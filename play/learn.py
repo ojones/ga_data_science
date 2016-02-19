@@ -2,16 +2,16 @@ import pickle, json, os
 
 
 def get_saved_classifier():
-	import urllib
+	# import urllib
 	# import urllib.request
 	# with urllib.request.urlopen(myurl) as f:
 	#     myfile = pickle.load(f)
-	opener = urllib.URLopener()
-	myurl = "https://s3-us-west-2.amazonaws.com/ozclassifiers/web_classifier.p"
-	print(" ")
-	print("please work damnit")
-	print(" ")
-	myfile = opener.open(myurl)
+	# opener = urllib.URLopener()
+	# myurl = "https://s3-us-west-2.amazonaws.com/ozclassifiers/web_classifier.p"
+	# print(" ")
+	# print("please work damnit")
+	# print(" ")
+	# myfile = opener.open(myurl)
     clf = None
     return clf
     # return joblib.load(web_classfier_file_path)
