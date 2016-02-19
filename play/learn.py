@@ -1,9 +1,9 @@
 import pickle, json, os
 myurl = "https://s3-us-west-2.amazonaws.com/ozclassifiers/web_classifier.p"
 myfile = None
-import urllib.request
-with urllib.request.urlopen(myurl) as f:
-    myfile = pickle.load(f)
+# import urllib.request
+# with urllib.request.urlopen(myurl) as f:
+#     myfile = pickle.load(f)
 # from sklearn.externals import joblib
 
 # web_classfier_file_path = 'data/classifiers/me_uni_pp_100' 
@@ -17,13 +17,13 @@ def get_saved_classifier():
     # data = pickle.load(f)
     # f.close()
     # return data
-    print(os.getcwd())
-    os.chdir(os.path.dirname(__file__))
-    print(os.getcwd())
-    print("++++++++++")
-    print("1" + str(os.path.isfile(web_classfier_file_path)))
-    print("2" + str(os.path.isfile(web_classfier_file_path2)))
-    print("3" + str(os.path.isfile(web_classfier_file_path3)))
+    # print(os.getcwd())
+    # os.chdir(os.path.dirname(__file__))
+    # print(os.getcwd())
+    # print("++++++++++")
+    # print("1" + str(os.path.isfile(web_classfier_file_path)))
+    # print("2" + str(os.path.isfile(web_classfier_file_path2)))
+    # print("3" + str(os.path.isfile(web_classfier_file_path3)))
     # with open(web_classfier_file_path, 'rb') as f:
     # 	print("this part works")
     # 	print("======================")
