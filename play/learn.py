@@ -9,14 +9,9 @@ myfile = None
 # web_classfier_file_path = 'data/classifiers/me_uni_pp_100' 
 web_classfier_file_path = '/app/play/data/web_classifier.p'  
 web_classfier_file_path2 = 'data/web_classifier.p'  
-web_classfier_file_path3 = 'play/data/web_classifier.p' 
 
 
 def get_saved_classifier():
-    # f = open(web_classfier_file_path, 'rb')
-    # data = pickle.load(f)
-    # f.close()
-    # return data
     # print(os.getcwd())
     # os.chdir(os.path.dirname(__file__))
     # print(os.getcwd())
