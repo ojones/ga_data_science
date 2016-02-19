@@ -1,6 +1,8 @@
 import pickle, json, os
+import urllib
+opener = urllib.URLopener()
 myurl = "https://s3-us-west-2.amazonaws.com/ozclassifiers/web_classifier.p"
-myfile = None
+myfile = opener.open(myurl)
 # import urllib.request
 # with urllib.request.urlopen(myurl) as f:
 #     myfile = pickle.load(f)
