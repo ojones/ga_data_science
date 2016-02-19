@@ -25,7 +25,7 @@ text_clf = Pipeline([('vect', CountVectorizer()),
                      ('clf', MultinomialNB()),
 ])
 
-row_count = 10000
+row_count = 50000
 data = list(procesed_text(cur, row_count))
 target = list(sentiment_value(cur, row_count))
 text_clf = text_clf.fit(data, target)
