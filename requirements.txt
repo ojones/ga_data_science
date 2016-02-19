@@ -2,4 +2,3 @@ gunicorn==19.1.0
 Flask==0.10.1
 tweepy==3.1.0
 twitter-oauth==0.2.0
-scikit-learn
