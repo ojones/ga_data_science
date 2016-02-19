@@ -1,12 +1,12 @@
-import pickle, json, os
+import pickle
+import urllib
 
+myurl = "https://s3-us-west-2.amazonaws.com/ozclassifiers/web_classifier.p"
+opener = urllib.URLopener()
+myfile = opener.open(myurl)
+clf = pickle.load(myfile)
 
 def get_saved_classifier():
-    myurl = "https://s3-us-west-2.amazonaws.com/ozclassifiers/web_classifier.p"
-    import urllib
-    opener = urllib.URLopener()
-    myfile = opener.open(myurl)
-    clf = pickle.load(myfile)
     return clf
 
 def get_classifications(tweets):

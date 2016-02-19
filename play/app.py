@@ -5,7 +5,6 @@ import os
 from play.tweets import get_tweets
 from play.process import get_processed
 from play.features import get_features
-from play.learn import get_accuracy
 from play.learn import get_classifications
 
 
