@@ -1,3 +1,5 @@
+# super important link: https://github.com/thenovices/heroku-buildpack-scipy
+
 import sqlite3
 conn = sqlite3.connect('/Users/oj/Documents/twitter_db/sentiment.db')
 cur = conn.cursor()
