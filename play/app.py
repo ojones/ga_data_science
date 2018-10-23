@@ -40,8 +40,9 @@ def _learn():
     features = json.loads(request.args.get('features'))
     options = json.loads(request.args.get('options'))
     choices = json.loads(request.args.get('choices'))
-    metrics = get_accuracy(choices)
-    return jsonify(metrics=metrics)
+    # decided to retrieve this data using javascript instead
+    # metrics = get_accuracy(choices)
+    # return jsonify(metrics=metrics)
 
 @app.route('/_test')
 def _test():
